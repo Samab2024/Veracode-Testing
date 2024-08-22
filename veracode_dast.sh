@@ -14,8 +14,11 @@ API_ID=$(echo $2 | cut -d "-" -f 2)
 # Set the Veracode API SECRET
 API_SECRET=$(echo $3 | cut -d "-" -f 2)
 
+# Set the URL Region
+REGION=$4
+
 # Set the API endpoint
-API_ENDPOINT="api.veracode.'${{ secrets.REGION }}'"
+API_ENDPOINT="api.veracode.'$REGION'"
 API_PATH="/dae/api/core-api/webhook"
 
  generate_hmac_header() { 
