@@ -38,7 +38,7 @@ echo "$VERACODE_AUTH_SCHEMA id=$API_ID,ts=$timestamp,nonce=$nonce,sig=$signature
  } 
 
 #### Setup the build system ####
-
+sudo -s
 apt-get install jq 
 mkdir -p test-reports
 
